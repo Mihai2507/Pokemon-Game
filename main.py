@@ -13,15 +13,15 @@ def main():
     batalie = Batalie()
     start = input("Would you like to start?\nY/N\n")
     if start == "Y" or start == "y":
-        Bulbasaur = Pokemon("Bulbasaur", "Pamant", 100, 20)
-        Venusaur = Pokemon("Venusaur", "Pamant", 110, 22)
-        Ivysaur = Pokemon("Ivysaur", "Pamant", 115, 24)
-        Blastoise = Pokemon("Blastoise", "Apa", 120, 18)
-        Wartortle = Pokemon("Wartortle", "Apa", 130, 15)
-        Squirtle = Pokemon("Squirtle", "Apa", 125, 17)
-        Charmeleon = Pokemon("Charmeleon", "Foc", 95, 24)
-        Charmander = Pokemon("Charmander", "Foc", 100, 23)
-        Charizard = Pokemon("Charizard", "Foc", 90, 25)
+        Bulbasaur = Pokemon("Bulbasaur", "Grass", 100, 20)
+        Venusaur = Pokemon("Venusaur", "Grass", 110, 22)
+        Ivysaur = Pokemon("Ivysaur", "Grass", 115, 24)
+        Blastoise = Pokemon("Blastoise", "Water", 120, 18)
+        Wartortle = Pokemon("Wartortle", "Water", 130, 15)
+        Squirtle = Pokemon("Squirtle", "Water", 125, 17)
+        Charmeleon = Pokemon("Charmeleon", "Fire", 95, 24)
+        Charmander = Pokemon("Charmander", "Fire", 100, 23)
+        Charizard = Pokemon("Charizard", "Fire", 90, 25)
 
         antrenor1 = Antrenor("Red", [Bulbasaur, Blastoise, Charmander])
         antrenor2 = Antrenor("Chase", [Charmeleon, Squirtle, Ivysaur])
@@ -36,38 +36,38 @@ def main():
 
         if trainer == "Red" and adversar == "Chase":
             batalie.lupta(antrenor1, antrenor2)
-            print("\nStarea finala a Pokemonilor:")
+            print("\nThe final state of the pokemons:")
             print(antrenor1)
             print(antrenor2)
         elif trainer == "Red" and adversar == "Ethan":
             batalie.lupta(antrenor1, antrenor3)
-            print("\nStarea finala a Pokemonilor:")
+            print("\nThe final state of the pokemons:")
             print(antrenor1)
             print(antrenor3)
         elif trainer == "Chase" and adversar == "Red":
             batalie.lupta(antrenor2, antrenor1)
-            print("\nStarea finala a Pokemonilor:")
+            print("\nThe final state of the pokemons:")
             print(antrenor2)
             print(antrenor1)
 
         elif trainer == "Chase" and adversar == "Ethan":
             batalie.lupta(antrenor2, antrenor3)
 
-            print("\nStarea finala a Pokemonilor:")
+            print("\nThe final state of the pokemons:")
             print(antrenor2)
             print(antrenor3)
 
         elif trainer == "Ethan" and adversar == "Red":
             batalie.lupta(antrenor3, antrenor1)
 
-            print("\nStarea finala a Pokemonilor:")
+            print("\nThe final state of the pokemons:")
             print(antrenor3)
             print(antrenor1)
 
         elif trainer == "Ethan" and adversar == "Chase":
             batalie.lupta(antrenor3, antrenor2)
 
-            print("\nStarea finala a Pokemonilor:")
+            print("\nThe final state of the pokemons:")
             print(antrenor3)
             print(antrenor2)
 
