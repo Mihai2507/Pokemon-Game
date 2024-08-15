@@ -6,11 +6,11 @@ class Pokemon:
         self.putere_atac = putere_atac
 
     def ataca(self, alt_pokemon):
-        if self.tip == "Apa" and alt_pokemon.tip == "Foc":
+        if self.tip == "Water" and alt_pokemon.tip == "Fire":
             alt_pokemon.viata -= 2 * self.putere_atac
-        elif self.tip == "Pamant" and alt_pokemon.tip == "Apa":
+        elif self.tip == "Grass" and alt_pokemon.tip == "Water":
             alt_pokemon.viata -= 2 * self.putere_atac
-        elif self.tip == "Foc" and alt_pokemon.tip == "Pamant":
+        elif self.tip == "Fire" and alt_pokemon.tip == "Grass":
             alt_pokemon.viata -= 2 * self.putere_atac
         else:
             alt_pokemon.viata -= self.putere_atac
