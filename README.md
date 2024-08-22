@@ -7,4 +7,4 @@ Welcome to the Pokémon Game! This project is a fun and interactive game where p
 
 # Technologies Used 🛠️
 - Programming Language: Python
-- Other Technologies: OOP *(Oriented Object Programming)*
+- Other Technologies: OOP *(Object-oriented programming)*
